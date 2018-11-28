@@ -20,20 +20,19 @@ a {
 	display: inline-block;
 	text-decoration: none;
 	font-weight: 300;
-	color: #fff;
+	/*color: #fff;*/
+	color: black;
 	font-size: 18px;
 	letter-spacing: 0.5px;
 }
- 
-.header {
-	position: relative;
-}
 
 .topnav-wrapper {
-	height: 65px;
+	/*height: 65px;*/
+	height: 100px;
 	width: 100%;
-	background-color: dodgerblue;
+	/*background-color: dodgerblue;*/
 	position: absolute;
+	top: -100px;	
 	display: flex;
 	justify-content: flex-end;
 	-ms-align-items: center;
@@ -56,6 +55,116 @@ a {
 /*------------------------------------------*/
 
 .header {
+	position: relative;
+	height: calc(100% - 100px);
+	margin-top: 100px;	
 	background-image: url(../img/bg.png);
 	background-position: 50% 50%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+} 
+
+.header:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;	
+	width: 100%;	
+	height: 100%;	
+	z-index: 1;
+	background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb04599, #fd1d1daa, #833ab499);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-135deg, #fcb045cc, #fd1d1daa, #833ab4aa); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
+.box {
+	text-align: center;
+	color: white;
+	z-index: 2;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	letter-spacing: 0.7px;
+	line-height: 1.5;
+}
+
+.heading {
+	font-size: 72px;
+	margin-bottom: 0;
+}
+
+.text {
+	font-size: 20px;
+	font-weight: 300;
+	width: 600px;	
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+.btn {
+	outline: none;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+	background-color: transparent;
+	font-size: 20px;
+	color: white;
+	border: 1.5px solid #fff;
+	padding: 15px 40px;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: baseline;
+	align-items: baseline;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.title {
+	width: 100%;
+	font-size: 40px;
+	margin-bottom: 3.5%;
+	font-weight: 400;
+}
+
+.screen {
+	padding: 8% 0 10%;
+}
+
+.item {
+	width: calc(100% / 3 - 10px);
+	padding: 3%;
+	margin: 5px;
+	/*background-color: blue;*/
+}
+
+
+.small {
+	width: 95px;
+}
+
+.item-text {
+	font-size: 18px;
+}
+
+.item-name {
+	font-size: 22px;
+}
+
+.color {
+	background-color: #833ab4cc;
+}
+
+
+
+
