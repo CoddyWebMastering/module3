@@ -104,67 +104,6 @@ a {
 	margin-bottom: 40px;
 }
 
-.btn {
-	outline: none;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-	background-color: transparent;
-	font-size: 20px;
-	color: white;
-	border: 1.5px solid #fff;
-	padding: 15px 40px;
-	font-weight: 300;
-	cursor: pointer;
-}
-
-
-
-.container {
-	max-width: 1200px;
-	margin: auto;
-	width: 95%;
-	display: flex;
-	justify-content: space-between;
-	-ms-align-items: baseline;
-	align-items: baseline;
-	text-align: center;
-	flex-wrap: wrap;
-}
-
-.title {
-	width: 100%;
-	font-size: 40px;
-	margin-bottom: 3.5%;
-	font-weight: 400;
-}
-
-.screen {
-	padding: 8% 0 10%;
-}
-
-.item {
-	width: calc(100% / 3 - 10px);
-	padding: 3%;
-	margin: 5px;
-	/*background-color: blue;*/
-}
-
-
-.small {
-	width: 95px;
-}
-
-.item-text {
-	font-size: 18px;
-}
-
-.item-name {
-	font-size: 22px;
-}
-
-.color {
-	background-color: #833ab4cc;
-}
-
 
 
 
